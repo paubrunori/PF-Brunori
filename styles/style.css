@@ -6,7 +6,6 @@ body {
 .fullscreen-container {
     position: relative;
     width: 100%;
-
     overflow: hidden;
 }
 
