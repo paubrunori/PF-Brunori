@@ -4,17 +4,19 @@ body {
 }
 
 .fullscreen-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
 
-.fullscreen-container img-fluid {
+.fullscreen-container .img-fluid {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    
+    object-fit: cover;
 }
 
 
@@ -48,8 +50,57 @@ nav a {
     width: 100%;
     color: white;
     text-align: center;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
+@media (max-width: 576px){
+
+.display-4 {
+    font-size: 1.25rem;
+}
+}
+
+.fs-4 {
+    font-size: 0.750rem; 
+}
+
+    .feature-title {
+        font-size: 1.25rem;
+    }
+
+    .features p {
+        font-size: 0.875rem;
+    }
+
+.nav-link {
+    font-size: 0.875rem; 
+}
+.section-title {
+    font-size: 1.5rem; 
+}
+.menu li {
+    font-size: 1rem; 
+}
+.event-details h3 {
+    font-size: 1rem; 
+}
+.about p {
+    font-size: 0.875rem; 
+}
+footer {
+    font-size: 0.875rem; 
+}
+
+.texto-superpuesto {
+    padding: 10px; 
+    height: auto;
+}
 
 .main-content {
     text-align: center;
@@ -78,6 +129,21 @@ nav a {
     letter-spacing: 5px;
     font-weight: bold;
     color: white;
+}
+.features {
+    background-color: #09090d;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.features p {
+    font-size: 1rem;
+    color: #555;
 }
 
 .events {
@@ -173,19 +239,21 @@ nav a {
 
 }
 
-.contact-section-div-iframe {
-
-    width: 100%;
-    height: 1000px;
-    background-color: #09090d;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    box-sizing: border-box;
-    left: 0;
+.map-responsive {
     position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+}
 
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .contact {
