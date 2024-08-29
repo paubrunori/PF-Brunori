@@ -395,6 +395,7 @@ footer {
     width: 100%;
     height: auto;
     display: block;
+    font-family: Arial, sans-serif;
 
 }
 
@@ -419,26 +420,29 @@ footer {
     background-color: #09090d;
     padding: 30px;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .contact h3 {
 
-    font-size: 24px;
+    font-size: 30px;
     margin: 0;
     padding: 10px;
-    letter-spacing: 5px;
     font-weight: bold;
     color: white;
+    font-family: Arial, sans-serif;
 }
 
 .contact form {
     display: grid;
     gap: 20px;
+    font-family: Arial, sans-serif;
 }
 
 .contact .form-group {
     display: grid;
     grid-template-columns: 1fr;
+    font-family: Arial, sans-serif;
 }
 
 .contact .form-label {
