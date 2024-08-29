@@ -59,46 +59,51 @@ nav a {
     box-sizing: border-box;
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
 
-.display-4 {
-    font-size: 1.25rem;
-}
+    .display-4 {
+        font-size: 1.25rem;
+    }
 }
 
 .fs-4 {
-    font-size: 0.750rem; 
+    font-size: 0.750rem;
 }
 
-    .feature-title {
-        font-size: 1.25rem;
-    }
+.feature-title {
+    font-size: 1.25rem;
+}
 
-    .features p {
-        font-size: 0.875rem;
-    }
+.features p {
+    font-size: 0.875rem;
+}
 
 .nav-link {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
 }
+
 .section-title {
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
 }
+
 .menu li {
-    font-size: 1rem; 
+    font-size: 1rem;
 }
+
 .event-details h3 {
-    font-size: 1rem; 
+    font-size: 1rem;
 }
+
 .about p {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
 }
+
 footer {
-    font-size: 0.875rem; 
+    font-size: 0.875rem;
 }
 
 .texto-superpuesto {
-    padding: 10px; 
+    padding: 10px;
     height: auto;
 }
 
@@ -130,6 +135,7 @@ footer {
     font-weight: bold;
     color: white;
 }
+
 .features {
     background-color: #09090d;
 }
@@ -147,23 +153,74 @@ footer {
 }
 
 .events {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
     flex-wrap: wrap;
+    gap: 20px;
     padding: 20px;
     background-color: #09090d;
+    text-align: center;
+}
+
+
+.events-title {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+.events-title h2 {
+    font-size: 2rem;
+    color: white; 
+    margin: 0;
+}
+
+.events-cards {
+display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; 
+    justify-items: center; 
 }
 
 .event-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 250px;
-    margin: 10px;
     padding: 10px;
     text-align: center;
+    box-sizing: border-box;
+}
+@media (min-width: 768px) {
+    .events {
+        grid-template-columns: 1fr;
+    }
+
+    .events-title h2 {
+        font-size: 2.5rem;
+    }
 }
 
+@media (min-width: 1024px) {
+    .events {
+        grid-template-columns: 1fr;
+    }
+
+    .events-title h2 {
+        font-size: 3rem;
+    }
+
+    .event-card {
+        max-width: 300px;
+    }
+}
 .event-image-placeholder {
     width: 100%;
     height: 230px;
@@ -258,7 +315,7 @@ footer {
 
 .contact {
     background-color: #09090d;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -266,9 +323,51 @@ footer {
 
     font-size: 24px;
     margin: 0;
+    padding: 10px;
     letter-spacing: 5px;
     font-weight: bold;
     color: white;
+}
+
+.contact form {
+    display: grid;
+    gap: 20px;
+}
+
+.contact .form-group {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contact .form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.contact .form-control {
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
+
+@media (max-width: 576px) {
+    .contact {
+        padding: 5px 5px;
+    }
+
+    .contact h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .contact .form-control {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .contact .btn {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
 }
 
 .image-placeholder {
