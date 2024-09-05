@@ -1,0 +1,58 @@
+.fullscreen-container {
+    .texto-superpuesto {
+      h1 {
+        font-size: 2.5rem;
+        color: $secondary-color;
+      }
+    }
+  }
+  
+  .contact {
+    h3 {
+      font-size: 1.75rem;
+      color: $secondary-color;
+      margin-bottom: 20px;
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+    }
+  
+    .form-control {
+      font-size: 1rem;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 10px 20px;
+      background-color: $primary-color;
+      color: $secondary-color;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+  
+  .map-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+  
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }

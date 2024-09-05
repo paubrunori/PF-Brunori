@@ -1,0 +1,44 @@
+.fullscreen-container {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .about {
+    background-color: $primary-color;
+    padding: 40px 20px;
+    text-align: center;
+    color: $secondary-color;
+  
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: $secondary-color;
+    }
+  
+    p {
+      font-size: 1.5rem;
+      margin: 0 auto;
+      letter-spacing: 1px;
+      max-width: 800px;
+      color: $secondary-color;
+    }
+  }
+  
+  .gallery {
+    .carousel-indicators button {
+      background-color: $secondary-color;
+    }
+  
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: $secondary-color;
+    }
+  }

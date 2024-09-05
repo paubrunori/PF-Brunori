@@ -1,0 +1,23 @@
+.menu {
+    background-color: $primary-color;
+    padding: 20px 15%;
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 18px;
+        color: $secondary-color;
+      }
+    }
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $secondary-color;
+  }

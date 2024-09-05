@@ -1,0 +1,19 @@
+.galery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: $primary-color;
+  
+    .image-box {
+      width: 800px;
+      height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }

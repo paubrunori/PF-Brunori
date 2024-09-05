@@ -1,0 +1,31 @@
+.fullscreen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+  
+    .img-fluid {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  
+  .texto-superpuesto {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: $secondary-color;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
