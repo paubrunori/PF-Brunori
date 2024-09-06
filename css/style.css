@@ -101,7 +101,25 @@ body {
   .menu li {
     font-size: 1.5rem;
   }
+  .carousel-inner img {
+    max-height: 600px;
+  }
 }
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.main-content {
+  text-align: center;
+}
+.main-content h1, .main-content h2, .main-content h3 {
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+
 nav ul {
   list-style: none;
   display: flex;

@@ -1,0 +1,15 @@
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: $secondary-color;
+  }
+  
+  .main-content {
+    text-align: center;
+  
+    h1, h2, h3 {
+      color: $secondary-color;
+      letter-spacing: 5px;
+    }
+  }
