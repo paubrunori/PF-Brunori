@@ -13,3 +13,31 @@
 .display-4 {
   font-size: 2.5rem;
 }
+.title-animate {
+  animation: fadeInUp 1s ease-out, scaleUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+h1, h2, h3 {
+  @extend .title-animate;
+}
